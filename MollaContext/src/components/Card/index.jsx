@@ -4,6 +4,7 @@ import { BasketContext } from "../../context/BasketContext";
 import { FaRegHeart } from "react-icons/fa";
 import { IoIosHeart } from "react-icons/io";
 import { WishlistContext } from "../../context/WishlistContext";
+import { Link } from "react-router-dom";
 
 const Card = ({
   image,
@@ -26,7 +27,7 @@ const Card = ({
           <div className="cardProductt">
             <div className="cardContent">
               <div className="cardImg">
-                <img src={image} alt="" />
+                <Link to={`/product/${item.id}`}><img src={image} alt="" /></Link>
                 <div className="addTocart">
                   <button onClick={() => handleBasket(item)}>AddToCart</button>
                   <div>

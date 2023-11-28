@@ -1,0 +1,43 @@
+.detailCard{
+    .detail-content{
+        display: flex;
+        padding-top: 80px;
+        align-items: center;
+        gap: 80px;
+        .product-img{
+        img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        }
+        .product-info{
+            p{
+            padding-bottom: 10px;
+
+            }
+            button{
+                background: none;
+                outline: none;
+                border: 1px solid black;
+                padding: 10px 22px;
+                color: black;
+                transition: all 0.5s ease;
+                margin-left: 20px;
+
+                &:hover{
+                    color: white;
+                    transition: all 0.5s ease;
+                    background-color: #c96;
+                    border:1px solid white   ;
+                }
+
+            }
+
+        }
+    }
+}
+
+img{
+    max-width: 100%;
+}
